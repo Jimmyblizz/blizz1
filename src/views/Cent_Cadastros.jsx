@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import {
-  FormGroup,
-  ControlLabel,
-  FormControl,
   Grid,
   Row,
   Col,
@@ -36,107 +33,72 @@ class UserPage extends Component {
   render() {
     const tabsIcons = (
       <Tab.Container id="tabs-with-dropdown" defaultActiveKey="paciente">
-        <Row className="clearfix">
-          <Col sm={12}>
-            <Nav bsStyle="tabs">
-              <NavItem eventKey="paciente">
-                <i className="fa fas fa-user" /> Paciente
-              </NavItem>
-              <NavItem eventKey="funcionario">
-                <i className="fa far fa-id-badge" /> Funcionário
-              </NavItem>
-              <NavItem eventKey="medico">
-                <i className="fa fas fa-user-md" /> Médico
-              </NavItem>
-            </Nav>
-          </Col>
-          <Col sm={12}>
-            <Tab.Content animation>
-              <Tab.Pane eventKey="paciente">
-                <form>
+        <Grid fluid>
+          <Row className="clearfix">
+            <Col sm={12}>
+              <form>
+                <div>
+                  <Button bsStyle="success" pullRight fill type="submit">Salvar</Button>
+                  <Button bsStyle="success" pullRight fill type="submit">Salvar</Button>
+                  <Button bsStyle="success" pullRight fill type="submit">Salvar</Button>
                   <h4>Dados Pessoais:</h4>
-                  <FormInputs id="dadosPessoais"
-                    ncols={["col-sm-2 col-xs-6", "col-sm-2 col-xs-6", "col-sm-3 col-xs-6", "col-sm-1 col-xs-6", "col-sm-2 col-xs-6", "col-sm-2 col-xs-6", "col-sm-2 col-xs-6", "col-sm-3 col-xs-6", "col-sm-3 col-xs-6", "col-sm-2 col-xs-6", "col-sm-2 col-xs-6"]}
-                    proprieties={[
-                      {
-                        label: "Prontuario",
-                        type: "text",
-                        bsClass: "form-control",
-                        defaultValue: "10005789",
-                        disabled: true
-                      },
-                      {
-                        label: "UserName",
-                        type: "text",
-                        bsClass: "form-control",
-                        placeholder: "Digite aqui o nome completo",
-                        defaultValue: "Thiago.Nascimento",
-                        disabled: true
-                      },
-                      {
-                        label: "Nome Completo",
-                        type: "text",
-                        bsClass: "form-control",
-                        placeholder: "Digite aqui o nome completo",
-                        defaultValue: "Thiago Nascimento Blizz Castro"
-                      },
-                      {
-                        label: "Sexo",
-                        type: "text",
-                        bsClass: "form-control cpf-mask",
-                        placeholder: "Masculino / Feminino",
-                        defaultValue: "Mas."
-                      },
-                      {
-                        label: "Data Nasc.",
-                        type: "date",
-                        bsClass: "form-control"
-                      },
-                      {
-                        label: "CPF",
-                        type: "text",
-                        bsClass: "form-control cpf-mask",
-                        placeholder: "Número do CPF",
-                        defaultValue: "000.000.000-00"
-                      },
-                      {
-                        label: "RG",
-                        type: "text",
-                        bsClass: "form-control",
-                        placeholder: "Digite aqui seu RG",
-                        defaultValue: "MG-5599553"
-                      },
-                      {
-                        label: "Nome do pai",
-                        type: "text",
-                        bsClass: "form-control",
-                        placeholder: "Nome do pai",
-                        defaultValue: "José Geraldo Martins de Castro"
-                      },
-                      {
-                        label: "Nome da mãe",
-                        type: "text",
-                        bsClass: "form-control",
-                        placeholder: "Nome da mãe",
-                        defaultValue: "Cleia Nascimento"
-                      },
-                      {
-                        label: "Plano de saúde",
-                        type: "text",
-                        bsClass: "form-control",
-                        placeholder: "Plano de saúde",
-                        defaultValue: "UNIMED"
-                      },
-                      {
-                        label: "Titular",
-                        type: "text",
-                        bsClass: "form-control",
-                        placeholder: "Nome do titular",
-                        defaultValue: ""
-                      },
-                    ]}
-                  />
-                  <h4>Contato:</h4>
+
+                </div>
+                <FormInputs
+                  ncols={["col-sm-2 col-xs-6", "col-sm-2 col-xs-6", "col-sm-3 col-xs-6", "col-sm-1 col-xs-6", "col-sm-2 col-xs-6", "col-sm-2 col-xs-6", "col-sm-2 col-xs-6"]}
+                  proprieties={[
+                    {
+                      label: "Prontuario",
+                      type: "text",
+                      bsClass: "form-control",
+                      defaultValue: "10005789",
+                      disabled: true
+                    },
+                    {
+                      label: "UserName",
+                      type: "text",
+                      bsClass: "form-control",
+                      defaultValue: "Thiago.Nascimento",
+                      disabled: true
+                    },
+                    {
+                      label: "Nome Completo",
+                      type: "text",
+                      bsClass: "form-control",
+                      placeholder: "Digite aqui o nome completo",
+                      defaultValue: "Thiago Nascimento Blizz Castro"
+                    },
+                    {
+                      label: "Sexo",
+                      type: "text",
+                      bsClass: "form-control cpf-mask",
+                      placeholder: "Masculino / Feminino",
+                      defaultValue: "Mas."
+                    },
+                    {
+                      label: "CPF",
+                      type: "text",
+                      bsClass: "form-control cpf-mask",
+                      placeholder: "Número do CPF",
+                      defaultValue: "000.000.000-00"
+                    },
+                    {
+                      label: "RG",
+                      type: "text",
+                      bsClass: "form-control",
+                      placeholder: "Digite aqui seu RG",
+                      defaultValue: "MG-5599553"
+                    },
+                    {
+                      label: "Nome da mãe",
+                      type: "text",
+                      bsClass: "form-control",
+                      placeholder: "Nome da mãe",
+                      defaultValue: "Cleia Nascimento"
+                    },
+                  ]}
+                />
+                <Grid fluid>
                   <FormInputs
                     ncols={["col-sm-3", "col-sm-3", "col-sm-3", "col-sm-3"]}
                     proprieties={[
@@ -170,7 +132,8 @@ class UserPage extends Component {
                       }
                     ]}
                   />
-                  <h4>Endereço:</h4>
+                </Grid>
+                <Grid fluid >
                   <FormInputs
                     ncols={["col-sm-2", "col-sm-5", "col-sm-2", "col-sm-3", "col-sm-4", "col-sm-4", "col-sm-4"]}
                     proprieties={[
@@ -225,39 +188,58 @@ class UserPage extends Component {
                       }
                     ]}
                   />
-                  <div className="row">
-                    <div className="col-md-12">
-                      <FormGroup controlId="formControlsTextarea">
-                        <h4>Observação:</h4>
-                        <ControlLabel></ControlLabel>
-                        <FormControl
-                          rows="3"
-                          componentClass="textarea"
-                          bsClass="form-control"
-                          placeholder="Here can be your description"
-                          defaultValue="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."
-                        />
-                      </FormGroup>
-                    </div>
-                  </div>
-                  <Button bsStyle="success" pullRight fill type="submit">
-                    Salvar
-                    </Button>
-                  <div className="clearfix" />
-                </form>
-              </Tab.Pane>
-              <Tab.Pane eventKey="funcionario">
+                </Grid>
+                <div className="clearfix" />
+              </form>
+            </Col>
+            <Col sm={12}>
+              <Nav bsStyle="tabs">
+                <NavItem eventKey="paciente">
+                  <i className="fa fas fa-user" /> Paciente
+              </NavItem>
+                <NavItem eventKey="funcionario">
+                  <i className="fa far fa-id-badge" /> Funcionário
+              </NavItem>
+                <NavItem eventKey="medico">
+                  <i className="fa fas fa-user-md" /> Médico
+              </NavItem>
+              </Nav>
+            </Col>
+            <Col sm={12}>
+              <Tab.Content animation>
+                <Tab.Pane eventKey="paciente">
+                <FormInputs
+                    ncols={["col-sm-3", "col-sm-3"]}
+                    proprieties={[
+                      {
+                        label: "Plano de Saúde",
+                        type: "text",
+                        bsClass: "form-control",
+                        placeholder: "Informe o Plano de Saúde",
+                        defaultValue: "UNIMED"
+                      },
+                      {
+                        label: "Titular",
+                        type: "text",
+                        bsClass: "form-control",
+                        placeholder: "Informe titular",
+                      }
+                    ]}
+                  />
+                </Tab.Pane>
+                <Tab.Pane eventKey="funcionario">
 
-              </Tab.Pane>
-              <Tab.Pane eventKey="medico">
+                </Tab.Pane>
+                <Tab.Pane eventKey="medico">
 
-              </Tab.Pane>
-            </Tab.Content>
-          </Col>
-        </Row>
+                </Tab.Pane>
+              </Tab.Content>
+            </Col>
+          </Row>
+        </Grid>
       </Tab.Container>
     );
-    console.log()
+
     return (
       <div className="main-content">
         <Grid fluid>
