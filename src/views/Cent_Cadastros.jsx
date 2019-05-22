@@ -16,6 +16,10 @@ import Card from "components/Card/Card.jsx";
 import FormInputs from "components/FormInputs/FormInputs.jsx";
 import Button from "components/CustomButton/CustomButton.jsx";
 
+import UserCard from "components/Card/UserCard.jsx";
+import avatar from "assets/img/default-avatar.png";
+
+
 class UserPage extends Component {
 
   isMac() {
@@ -51,8 +55,8 @@ class UserPage extends Component {
               <Tab.Pane eventKey="paciente">
                 <form>
                   <h4>Dados Pessoais:</h4>
-                  <FormInputs 
-                    ncols={["col-sm-2 col-xs-6", "col-sm-2 col-xs-6", "col-sm-3 col-xs-6", "col-sm-1 col-xs-6","col-sm-2 col-xs-6", "col-sm-2 col-xs-6", "col-sm-2 col-xs-6","col-sm-3 col-xs-6","col-sm-3 col-xs-6","col-sm-2 col-xs-6","col-sm-2 col-xs-6"]}
+                  <FormInputs id="dadosPessoais"
+                    ncols={["col-sm-2 col-xs-6", "col-sm-2 col-xs-6", "col-sm-3 col-xs-6", "col-sm-1 col-xs-6", "col-sm-2 col-xs-6", "col-sm-2 col-xs-6", "col-sm-2 col-xs-6", "col-sm-3 col-xs-6", "col-sm-3 col-xs-6", "col-sm-2 col-xs-6", "col-sm-2 col-xs-6"]}
                     proprieties={[
                       {
                         label: "Prontuario",
@@ -168,7 +172,7 @@ class UserPage extends Component {
                   />
                   <h4>Endereço:</h4>
                   <FormInputs
-                    ncols={["col-sm-2", "col-sm-5", "col-sm-2", "col-sm-3","col-sm-4", "col-sm-4", "col-sm-4"]}
+                    ncols={["col-sm-2", "col-sm-5", "col-sm-2", "col-sm-3", "col-sm-4", "col-sm-4", "col-sm-4"]}
                     proprieties={[
                       {
                         label: "CEP",
@@ -243,27 +247,43 @@ class UserPage extends Component {
                 </form>
               </Tab.Pane>
               <Tab.Pane eventKey="funcionario">
-              
+
               </Tab.Pane>
               <Tab.Pane eventKey="medico">
-              
+
               </Tab.Pane>
             </Tab.Content>
           </Col>
         </Row>
       </Tab.Container>
     );
-
+    console.log()
     return (
-
-
       <div className="main-content">
         <Grid fluid>
           <Row>
-            <Col md={12}>
+            <Col sm={8} lg={9}>
               <Card
                 ctFullWidth
                 content={tabsIcons}
+              />
+            </Col>
+            <Col sm={4} lg={3} >
+              <UserCard
+                bgImage="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400"
+                avatar={avatar}
+                name="Tania Andrew"
+                userName="tania123"
+                email="email@exemplo"
+                description={
+                  <span>
+                    "Lamborghini Mercy
+                    <br />
+                    Your chick she so thirsty
+                    <br />
+                    I'm in that two seat Lambo"
+                  </span>
+                }
               />
             </Col>
           </Row>
