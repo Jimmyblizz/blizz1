@@ -48,7 +48,7 @@ class AdminNavbar extends Component {
         <Navbar.Header>
           <Navbar.Brand>
             {/* Here we create navbar brand, based on route name */}
-            <a href="#pablo">{this.getActiveRoute(routes)}</a>
+            <a href="#a ">{this.getActiveRoute(routes)}</a>
           </Navbar.Brand>
           <Navbar.Toggle onClick={this.mobileSidebarToggle} />
         </Navbar.Header>

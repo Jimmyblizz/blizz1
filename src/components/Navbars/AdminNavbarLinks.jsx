@@ -20,36 +20,16 @@ class HeaderLinks extends Component {
               <InputGroup.Addon>
                 <i className="fa fa-search" />
               </InputGroup.Addon>
-              <FormControl type="text" placeholder="Search..." />
+              <FormControl type="text" placeholder="Procurar..." />
             </InputGroup>
           </FormGroup>
         </Navbar.Form>
         <Nav pullRight>
           <NavItem eventKey={3} href="#">
             <i className="fa fa-line-chart" />
-            <p>Stats</p>
+            <p>Status</p>
           </NavItem>
-          <NavDropdown
-            eventKey={2}
-            title={
-              <div>
-                <i className="fa fa-gavel" />
-                <p className="hidden-md hidden-lg">
-                  Actions
-                  <b className="caret" />
-                </p>
-              </div>
-            }
-            noCaret
-            id="basic-nav-dropdown-1"
-          >
-            <MenuItem eventKey={2.1}>Create New Post</MenuItem>
-            <MenuItem eventKey={2.2}>Manage Something</MenuItem>
-            <MenuItem eventKey={2.3}>Do Nothing</MenuItem>
-            <MenuItem eventKey={2.4}>Submit to live</MenuItem>
-            <MenuItem divider />
-            <MenuItem eventKey={2.5}>Another action</MenuItem>
-          </NavDropdown>
+
           <NavDropdown
             eventKey={3}
             title={
