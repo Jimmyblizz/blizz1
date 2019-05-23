@@ -1,5 +1,8 @@
-# Tela central de cadastros
+# blizz versao 0.1
 
+<img src="src/assets/img/v01.jpg">
+
+Cadastro, agenda, financeiro, relatorios
 
 ## Estrutura dos arquivos
 
@@ -8,7 +11,7 @@
 ├── README.md
 ├── public
 │   ├── apple-icon.png
-│   ├── favicon.png    
+│   ├── favicon.png
 │   ├── index.html
 │   └── manifest.json
 │
@@ -58,8 +61,8 @@
     │   ├── Sidebar
     │   │   └── Sidebar.jsx
     │   └── Tasks
-    │       └── Tasks.jsx 
-    │   
+    │       └── Tasks.jsx
+    │
     ├── layouts
     │   ├── Admin.jsx
     │   └── Auth.jsx
