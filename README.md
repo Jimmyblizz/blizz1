@@ -76,8 +76,10 @@ Cadastro, agenda, financeiro, relatorios
         ├── Atendimentos.jsx
         ├── Aux_financeiro.jsx
         ├── Central_Cadastros.jsx
+        ├── Dashboard.jsx
+        ├── Faturamento.jsx
         ├── Financeiro.jsx
-        ├── text.jsx
-        └── Dashboard.jsx
+        ├── Laudos.jsx
+        └── text.jsx.jsx
 
 ```
