@@ -3,6 +3,8 @@ import Central_Cadastros from "views/Central_Cadastros.jsx";
 import Atendimento from "views/Atendimento.jsx";
 import Financeiro from "views/Financeiro.jsx";
 import Aux_financeiro from "views/Aux_financeiro.jsx";
+import Faturamento from "views/Faturamento.jsx";
+import Laudos from "views/Laudos.jsx";
 
 var routes = [
   {
@@ -27,11 +29,18 @@ var routes = [
     component: Atendimento
   },
   {
+    path: "/laudos",
+    layout: "/admin",
+    name: "Laudos",
+    icon: "pe-7s-file",
+    component: Laudos
+  },
+  {
     collapse: true,
     path: "/financeiro",
     layout: "/admin",
     name: "Financeiro",
-    icon: "pe-7s-piggy",
+    icon: "pe-7s-cash",
     component: Financeiro,
     state: "openComponents",
     views: [
@@ -48,6 +57,23 @@ var routes = [
         name: "Aux. Financeiro",
         mini: "AUX",
         component: Aux_financeiro
+      }
+    ]
+  },
+  {
+    collapse: true,
+    path: "/faturamento",
+    layout: "/admin",
+    name: "Faturamento",
+    icon: "pe-7s-folder",
+    component: Faturamento,
+    views: [
+      {
+        path: "/Faturas",
+        layout: "/admin",
+        name: "Faturas",
+        mini: "FAT",
+        component: Faturamento
       }
     ]
   }

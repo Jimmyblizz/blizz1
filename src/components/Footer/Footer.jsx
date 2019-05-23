@@ -18,23 +18,26 @@ class Footer extends Component {
           <nav className="pull-left">
             <ul>
               <li>
-                <a href="#pablo">Home</a>
+                <a href="#dashboard">Home</a>
               </li>
               <li>
-                <a href="#pablo">Company</a>
+                <a href="#atendimento">Atendimento</a>
               </li>
               <li>
-                <a href="#pablo">Portfolio</a>
+                <a href="#laudos">Portfolio</a>
               </li>
               <li>
-                <a href="#pablo">Blog</a>
+                <a href="#financeiro">Blog</a>
               </li>
             </ul>
           </nav>
           <p className="copyright pull-right">
             &copy; {1900 + new Date().getYear()}{" "}
-            <a href="https://www.creative-tim.com?ref=lbdpr-footer" target="_blank">Creative Tim</a>, made with{" "}
-            <i className="fa fa-heart heart" /> for a better web
+            <a href="blizz" target="_blank">
+              Blizz Saude
+            </a>
+            , Gestão simplificada <i className="fa fa-heart heart" /> como deve
+            ser.
           </p>
         </div>
       </footer>

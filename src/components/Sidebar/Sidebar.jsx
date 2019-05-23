@@ -167,21 +167,13 @@ class Sidebar extends Component {
           ""
         )}
         <div className="logo">
-          <a
-            href="https://www.creative-tim.com?ref=lbdpr-sidebar"
-            className="simple-text logo-mini"
-            target="_blank"
-          >
+          <a href="blizz" className="simple-text logo-mini" target="_blank">
             <div className="logo-img">
               <img src={logo} alt="react-logo" />
             </div>
           </a>
-          <a
-            href="https://www.creative-tim.com?ref=lbdpr-sidebar"
-            className="simple-text logo-normal"
-            target="_blank"
-          >
-            Creative Tim
+          <a href="blizz" className="simple-text logo-normal" target="_blank">
+            Blizz Radiologia
           </a>
         </div>
         <div className="sidebar-wrapper" ref="sidebarWrapper">
@@ -211,19 +203,19 @@ class Sidebar extends Component {
                   <li>
                     <a href="#pablo" onClick={e => e.preventDefault()}>
                       <span className="sidebar-mini">MP</span>
-                      <span className="sidebar-normal">My Profile</span>
+                      <span className="sidebar-normal">Meu Perfil</span>
                     </a>
                   </li>
                   <li>
                     <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <span className="sidebar-mini">EP</span>
-                      <span className="sidebar-normal">Edit Profile</span>
+                      <span className="sidebar-mini">AS</span>
+                      <span className="sidebar-normal">Alterar Senha</span>
                     </a>
                   </li>
                   <li>
                     <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <span className="sidebar-mini">S</span>
-                      <span className="sidebar-normal">Settings</span>
+                      <span className="sidebar-mini">Conf</span>
+                      <span className="sidebar-normal">Configurações</span>
                     </a>
                   </li>
                 </ul>
