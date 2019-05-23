@@ -73,7 +73,11 @@ Cadastro, agenda, financeiro, relatorios
     │   └── faVariables.jsx
     │
     └── views
-        ├── Cent_Cadastros.jsx
+        ├── Atendimentos.jsx
+        ├── Aux_financeiro.jsx
+        ├── Central_Cadastros.jsx
+        ├── Financeiro.jsx
+        ├── text.jsx
         └── Dashboard.jsx
 
 ```
