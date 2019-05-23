@@ -1,6 +1,8 @@
+#v.0.2
+
 # blizz versao 0.1
 
-<img src="src/assets/img/v01.jpg">
+<img src="src/assets/img/v02.jpg">
 
 Cadastro, agenda, financeiro, relatorios
 
